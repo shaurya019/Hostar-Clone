@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import "./App.css";
 
 function App() {
   return (
-   <>
-   <h1>
-    Disney
-   </h1>
-   </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Login />} />
+      </Routes>
+    </div>
   );
 }
 
